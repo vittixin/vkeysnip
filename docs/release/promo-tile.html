@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 440px;
+        height: 280px;
+        margin: 0;
+        overflow: hidden;
+      }
+      body {
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: #f5f7ee;
+        background: #18251d;
+      }
+      .tile {
+        position: relative;
+        width: 440px;
+        height: 280px;
+        overflow: hidden;
+        background: radial-gradient(
+          ellipse at 79% 38%,
+          #344c35 0,
+          #23372a 35%,
+          #18251d 74%
+        );
+      }
+      .glow {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        right: -70px;
+        bottom: -145px;
+        border-radius: 50%;
+        background: #d5f279;
+        filter: blur(1px);
+        opacity: 0.9;
+      }
+      .brand {
+        position: absolute;
+        left: 25px;
+        top: 23px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-size: 15px;
+        font-weight: 750;
+        letter-spacing: -0.3px;
+      }
+      .mark {
+        display: grid;
+        place-items: center;
+        width: 27px;
+        height: 27px;
+        border-radius: 8px;
+        color: #18251d;
+        background: #d5f279;
+        font-size: 18px;
+        font-weight: 900;
+      }
+      .copy {
+        position: absolute;
+        left: 27px;
+        top: 86px;
+        width: 198px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 32px;
+        line-height: 1.03;
+        letter-spacing: -1.4px;
+        font-weight: 760;
+      }
+      h1 span {
+        color: #d5f279;
+      }
+      p {
+        margin: 13px 0 0;
+        color: #c2cbbb;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .card {
+        position: absolute;
+        right: 22px;
+        top: 93px;
+        width: 184px;
+        padding: 14px;
+        border: 1px solid #ffffff28;
+        border-radius: 13px;
+        background: #f8f9f4;
+        color: #27352a;
+        box-shadow: 0 18px 45px #08120c80;
+        transform: rotate(3deg);
+      }
+      .field-label {
+        color: #7c8579;
+        font:
+          700 8px ui-monospace,
+          monospace;
+        letter-spacing: 1px;
+      }
+      .field {
+        height: 34px;
+        margin-top: 8px;
+        padding: 9px;
+        border: 1px solid #dce1d6;
+        border-radius: 6px;
+        color: #3b463b;
+        font-size: 11px;
+      }
+      .trigger {
+        float: right;
+        padding: 3px 6px;
+        border-radius: 4px;
+        background: #eef3e6;
+        color: #5e6a55;
+        font:
+          10px ui-monospace,
+          monospace;
+      }
+      .expanded {
+        height: 53px;
+        margin-top: 8px;
+        padding: 10px;
+        border-radius: 6px;
+        background: #f0f3e9;
+        color: #435041;
+        font-size: 11px;
+        line-height: 1.5;
+      }
+      .spark {
+        position: absolute;
+        right: 199px;
+        top: 70px;
+        width: 18px;
+        height: 18px;
+        color: #d5f279;
+        font-size: 19px;
+      }
+      .tag {
+        position: absolute;
+        left: 27px;
+        bottom: 20px;
+        color: #c2cbbb;
+        font:
+          700 8px ui-monospace,
+          monospace;
+        letter-spacing: 1.6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="tile">
+      <div class="glow"></div>
+      <div class="brand"><span class="mark">V</span> VKeysnip</div>
+      <div class="copy">
+        <h1>Less typing.<br /><span>More doing.</span></h1>
+        <p>
+          Your snippets, right where you write.<br />Private by design. Stored
+          on your device.
+        </p>
+      </div>
+      <span class="spark">✳</span>
+      <div class="card">
+        <div class="field-label">
+          YOUR MESSAGE <span class="trigger">;sig</span>
+        </div>
+        <div class="field">Thanks for reaching out…</div>
+        <div class="expanded">
+          Thanks for reaching out.<br />I’ll get back to you soon.
+        </div>
+      </div>
+      <div class="tag">LOCAL · PRIVATE · YOURS</div>
+    </main>
+  </body>
+</html>
